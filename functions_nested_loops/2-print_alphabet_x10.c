@@ -6,7 +6,7 @@
  * @b: int to be added to a
  * Return: sum of a and b
  */
-int add(int a, int b)
+void print_alphabet_x10(void)
 {
 	int c;
 
