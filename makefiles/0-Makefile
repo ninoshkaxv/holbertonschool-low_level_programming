@@ -1,0 +1,11 @@
+# Name of the executable
+EXECUTABLE = school
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): main.c  # Add your source files here
+    gcc -o $@ $^
+
+clean:
+
+.PHONY: clean
