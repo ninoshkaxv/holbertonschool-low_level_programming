@@ -1,15 +1,2 @@
-# Name of the executable
-EXECUTABLE = school
-
-# Rule to build the executable
-all: $(EXECUTABLE)
-
-# Compile the source files and link to create the executable
-$(EXECUTABLE): main.c  # Add your source files here
-    gcc -o $@ $^
-
-# Clean rule to remove the executable
-clean:
-
-# Phony target to prevent conflicts with files named "clean"
-.PHONY: clean
+all: main.c school.c
+	gcc main.c school.c -o school
