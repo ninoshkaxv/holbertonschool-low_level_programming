@@ -10,8 +10,6 @@ $(EXECUTABLE): main.c  # Add your source files here
 
 # Clean rule to remove the executable
 clean:
-    rm -f $(EXECUTABLE)
 
 # Phony target to prevent conflicts with files named "clean"
 .PHONY: clean
-
