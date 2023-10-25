@@ -1,16 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _puts - prints a string to stdout
- * @str: pointer to the string to print
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-void _puts(char *str)
+int main(void)
 {
-	int i;
+    char s1[] = "Hello";
+    char s2[] = "World!";
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
 }
