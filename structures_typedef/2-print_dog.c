@@ -3,8 +3,8 @@
 #include "dog.h"
 
 /**
- print_dog - Prints information about a struct dog
- * @d: Pointer to a struct dog to print
+ * print_dog - it prints a struct dog
+ * @d: the struct dog to print
  */
 void print_dog(struct dog *d)
 {
