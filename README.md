@@ -1,27 +1,18 @@
-# This document provides an overview of macros in C and C++ programming, including the use of macros, common predefined macros, and the importance of include guards in header files.
+# Function Pointers in C
 
-## Macros
+## Overview
 
-### What Are Macros?
+This document provides an introduction to function pointers in the C programming language, explaining what function pointers are. It also discusses the content held by a function pointer and where in the virtual memory a function pointer points to.
 
-In C and C++ programming, macros are a way to define reusable code snippets or constants using the `#define` directive. They allow you to simplify code, enhance readability, and manage configuration options.
+## Function Pointers
 
-### How to Use Macros
+A function pointer in C is a variable that stores the memory address of a function. It enables indirect invocation of functions, providing flexibility in function calls.
 
-You can define a macro using the `#define` directive, followed by the macro name and its value. Macros are typically written in uppercase to distinguish them from variables and functions.
+### Content Held by Function Pointers
 
-## Predefined Macros
+A function pointer exactly holds the memory address of a function. It points to the starting address of the machine code representing the function's implementation.
 
-Predefined macros are constants automatically defined by the C and C++ compilers. They provide information about the compiler, platform, and build environment, which can be useful for conditional compilation and platform-specific code.
-Some common predefined macros include:
+### Location in Virtual Memory
 
-    __FILE__: Name of the current source file.
-    __LINE__: Current line number within the source file.
-    __DATE__: Date when the source file was last modified.
-    __TIME__: Time when the source file was last modified.
-    __cplusplus: Defined when compiling C++ code.
-
-## Include Guards
-
-Include guards (or header guards) are used in header files to prevent multiple inclusions of the same header in a source file. They ensure that the content of a header file is included only once, avoiding redefinition errors and improving compilation efficiency.
+A function pointer points to the code section of the virtual memory where the corresponding function's executable code is loaded. This allows dynamic invocation of functions during runtime.
 
